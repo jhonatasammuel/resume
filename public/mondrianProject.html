@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container {
+        height: 748px;
+        width: 748px;
+        background-color: black;
+        display: grid;
+        grid-template: 414px 130px 155px 22px / 320px 198px 153px 50px;
+        gap: 9px;
+      }
+
+      #bloco-vermelho {
+        background-color: #e72f24;
+      }
+
+      .cor-branco {
+        background-color: #f0f1ec;
+      }
+
+      #bloco-branco-1 {
+        grid-column: span 3;
+      }
+
+      #bloco-branco-2 {
+        grid-row: span 2;
+      }
+
+      #bloco-branco-3 {
+        grid-area: 2 / 2 / 4 /4;
+      }
+
+      #bloco-branco-4 {
+        grid-row: span 2;
+      }
+
+      #bloco-azul {
+        background-color: #004592;
+        height: 120px;
+        border-bottom: 10px solid black;
+      }
+
+      #bloco-amarelo {
+        background-color: #f9d01e;
+      }
+
+      #bloco-preto {
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="bloco-vermelho"></div>
+      <div id="bloco-branco-1" class="cor-branco"></div>
+      <div id="bloco-branco-2" class="cor-branco"></div>
+      <div id="bloco-branco-3" class="cor-branco"></div>
+      <div id="bloco-azul"></div>
+      <div id="bloco-branco-4" class="cor-branco"></div>
+      <div class="cor-branco"></div>
+      <div id="bloco-amarelo"></div>
+      <div id="bloco-preto"></div>
+    </div>
+  </body>
+</html>
